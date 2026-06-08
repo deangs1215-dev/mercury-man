@@ -49,70 +49,20 @@ a {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
-  font-family: "Cinzel", Georgia, serif;
-  font-weight: 700;
   letter-spacing: 0;
 }
 
-.brand-mark {
-  position: relative;
-  display: grid;
-  width: 54px;
-  height: 54px;
-  place-items: center;
-  overflow: hidden;
-  border: 1px solid rgba(196, 155, 87, 0.82);
-  background: rgba(15, 14, 13, 0.74);
-  box-shadow: 0 12px 28px rgba(15, 14, 13, 0.18);
-}
-
-.brand-mark::before,
-.brand-mark::after {
-  content: "";
-  position: absolute;
-  left: 9px;
-  right: 9px;
-  height: 1px;
-  background: var(--brass);
-}
-
-.brand-mark::before {
-  top: 8px;
-}
-
-.brand-mark::after {
-  bottom: 8px;
-}
-
-.brand-pole {
-  position: absolute;
-  inset: 0;
-  opacity: 0.58;
-  background:
-    linear-gradient(135deg, transparent 0 38%, rgba(196, 155, 87, 0.32) 38% 44%, transparent 44% 100%),
-    linear-gradient(135deg, transparent 0 56%, rgba(23, 75, 74, 0.42) 56% 62%, transparent 62% 100%);
-}
-
-.brand-initials {
-  position: relative;
-  color: var(--cream);
-  font-size: 0.82rem;
-  line-height: 1;
-}
-
-.brand-name {
-  display: grid;
-  gap: 1px;
-  color: var(--cream);
-  font-size: clamp(0.92rem, 1.75vw, 1.18rem);
-  line-height: 1.04;
-  text-transform: uppercase;
-}
-
-.brand-name span:last-child {
-  color: var(--brass);
-  font-size: 1.22em;
+.brand-neon {
+  color: #ffd56f;
+  font-family: "Yellowtail", "Brush Script MT", cursive;
+  font-size: clamp(1.55rem, 3.2vw, 2.45rem);
+  font-weight: 400;
+  line-height: 0.9;
+  text-shadow:
+    0 0 4px rgba(255, 209, 105, 0.95),
+    0 0 12px rgba(255, 177, 40, 0.72),
+    0 0 28px rgba(255, 139, 21, 0.44);
+  white-space: nowrap;
 }
 
 .nav {
