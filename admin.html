@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mercury Man | Owner Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body class="admin-body">
+  <main class="admin-shell">
+    <section class="admin-login" data-login-panel>
+      <p class="eyebrow">Owner access</p>
+      <h1>Mercury Man Admin</h1>
+      <p>Demo login for appointment completion and review follow-ups.</p>
+      <form class="admin-form" data-login-form>
+        <label>
+          Username
+          <input type="text" name="username" value="owner" autocomplete="username">
+        </label>
+        <label>
+          Password
+          <input type="password" name="password" value="mercuryman2026" autocomplete="current-password">
+        </label>
+        <button class="button primary" type="submit">Login</button>
+        <p class="admin-note" data-login-note></p>
+      </form>
+    </section>
+
+    <section class="admin-dashboard" data-dashboard hidden>
+      <header class="admin-topbar">
+        <div>
+          <p class="eyebrow">Appointments</p>
+          <h1>Owner Dashboard</h1>
+        </div>
+        <div class="admin-actions">
+          <a class="button secondary" href="index.html">Website</a>
+          <button class="button secondary" type="button" data-logout>Logout</button>
+        </div>
+      </header>
+
+      <section class="admin-panel">
+        <div class="panel-heading">
+          <h2>Add test appointment</h2>
+          <p>Create a customer visit, then mark it complete to trigger the WhatsApp review message.</p>
+        </div>
+        <form class="appointment-form" data-appointment-form>
+          <label>
+            Customer name
+            <input type="text" name="name" placeholder="Customer name" required>
+          </label>
+          <label>
+            Customer WhatsApp
+            <input type="tel" name="phone" placeholder="27821234567" required>
+          </label>
+          <label>
+            Service
+            <select name="service" required>
+              <option>Classic Cut</option>
+              <option>Fade</option>
+              <option>Student Cut</option>
+              <option>Student Fade</option>
+              <option>Clipper Cut</option>
+              <option>#1 Buzz Cut</option>
+              <option>Hot Towel Head Shave</option>
+              <option>Classic + Pattern</option>
+              <option>Fade + Pattern</option>
+              <option>Fade + Pattern U/13</option>
+            </select>
+          </label>
+          <button class="button primary" type="submit">Add appointment</button>
+        </form>
+      </section>
+
+      <section class="admin-panel">
+        <div class="panel-heading">
+          <h2>Today</h2>
+          <p>Click complete once the customer has left the chair.</p>
+        </div>
+        <div class="appointment-list" data-appointment-list></div>
+      </section>
+
+      <section class="admin-panel">
+        <div class="panel-heading">
+          <h2>Private feedback</h2>
+          <p>Ratings under 4.5 stay internal for follow-up. Great ratings can be shared by the customer.</p>
+        </div>
+        <div class="feedback-list" data-feedback-list></div>
+      </section>
+    </section>
+  </main>
+  <script src="admin.js"></script>
+</body>
+</html>

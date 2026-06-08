@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mercury Man | Review</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body class="review-body">
+  <main class="review-shell">
+    <section class="review-card-panel">
+      <p class="eyebrow">Thank you</p>
+      <h1>How was your visit?</h1>
+      <p data-review-intro>We hope you enjoyed your appointment at Mercury Man.</p>
+      <form class="review-form" data-review-form>
+        <div class="star-field" aria-label="Rating out of five">
+          <button type="button" data-star="1">*</button>
+          <button type="button" data-star="2">*</button>
+          <button type="button" data-star="3">*</button>
+          <button type="button" data-star="4">*</button>
+          <button type="button" data-star="5">*</button>
+        </div>
+        <label>
+          Message
+          <textarea name="message" placeholder="Add a note for the team"></textarea>
+        </label>
+        <button class="button primary" type="submit">Submit review</button>
+      </form>
+      <div class="review-result" data-review-result hidden></div>
+    </section>
+  </main>
+  <script src="review.js"></script>
+</body>
+</html>

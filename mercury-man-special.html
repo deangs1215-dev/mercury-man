@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mercury Man | Grooming Special</title>
+  <meta name="description" content="A Mercury Man grooming special for sharp cuts, clean detail, and a confident finish.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@500;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --coal: #0f0e0d;
+      --charcoal: #24201d;
+      --cream: #f4efe4;
+      --brass: #c49b57;
+      --teal: #174b4a;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      background: #181614;
+      font-family: "Inter", Arial, sans-serif;
+    }
+
+    .post {
+      position: relative;
+      width: min(1080px, 100vw);
+      aspect-ratio: 1;
+      overflow: hidden;
+      color: var(--cream);
+      background:
+        linear-gradient(90deg, rgba(15, 14, 13, 0.96), rgba(15, 14, 13, 0.78) 48%, rgba(15, 14, 13, 0.24)),
+        url("assets/mercury-man-hero-indoor.png") center / cover;
+      isolation: isolate;
+    }
+
+    .post::before {
+      content: "";
+      position: absolute;
+      inset: 42px;
+      border: 2px solid rgba(196, 155, 87, 0.72);
+      z-index: -1;
+    }
+
+    .brand {
+      position: absolute;
+      top: 68px;
+      left: 72px;
+      display: inline-flex;
+      align-items: center;
+      gap: 16px;
+      font-family: "Cinzel", Georgia, serif;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .brand-mark {
+      display: grid;
+      width: 62px;
+      height: 62px;
+      place-items: center;
+      border: 1px solid var(--brass);
+      color: var(--brass);
+      background: rgba(15, 14, 13, 0.76);
+      font-size: 0.9rem;
+    }
+
+    .brand-name {
+      display: grid;
+      gap: 2px;
+      font-size: 1.38rem;
+      line-height: 1.04;
+    }
+
+    .brand-name span:last-child {
+      color: var(--brass);
+      font-size: 1.22em;
+    }
+
+    .content {
+      width: min(760px, calc(100% - 144px));
+      padding: 220px 0 0 72px;
+    }
+
+    .eyebrow {
+      margin: 0 0 20px;
+      color: var(--brass);
+      font-size: 1rem;
+      font-weight: 800;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 9ch;
+      margin: 0;
+      font-family: "Cinzel", Georgia, serif;
+      font-size: 6.2rem;
+      line-height: 0.96;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+
+    .price {
+      display: inline-flex;
+      margin: 34px 0 0;
+      align-items: center;
+      gap: 18px;
+      color: var(--brass);
+      font-family: "Cinzel", Georgia, serif;
+      font-size: 5.1rem;
+      font-weight: 800;
+      line-height: 1;
+    }
+
+    .price span {
+      color: var(--cream);
+      font-family: "Inter", Arial, sans-serif;
+      font-size: 1.12rem;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .copy {
+      max-width: 610px;
+      margin: 26px 0 0;
+      color: rgba(244, 239, 228, 0.82);
+      font-size: 1.35rem;
+      line-height: 1.45;
+    }
+
+    .cta {
+      position: absolute;
+      left: 72px;
+      bottom: 72px;
+      display: inline-flex;
+      min-height: 64px;
+      align-items: center;
+      justify-content: center;
+      padding: 18px 28px;
+      color: var(--coal);
+      background: var(--brass);
+      font-size: 1.05rem;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    .contact {
+      position: absolute;
+      right: 72px;
+      bottom: 74px;
+      color: rgba(244, 239, 228, 0.84);
+      font-size: 1.08rem;
+      font-weight: 800;
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+  <main class="post" aria-label="Mercury Man grooming special social post">
+    <div class="brand">
+      <span class="brand-mark">MM</span>
+      <span class="brand-name">
+        <span>Mercury</span>
+        <span>Man</span>
+      </span>
+    </div>
+    <section class="content">
+      <p class="eyebrow">Grooming Special</p>
+      <h1>Book your signature cut</h1>
+      <div class="price">R180 <span>limited offer</span></div>
+      <p class="copy">Step into a polished Mercury Man refresh with sharp care, warm service, and a finish made for moving well.</p>
+    </section>
+    <div class="cta">Book now</div>
+    <div class="contact">079 703 4628<br>5 Lower Road, Morningside</div>
+  </main>
+</body>
+</html>

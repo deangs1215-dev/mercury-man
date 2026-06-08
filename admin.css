@@ -1,0 +1,219 @@
+.admin-body,
+.review-body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--charcoal), var(--teal));
+}
+
+.admin-shell,
+.review-shell {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: clamp(28px, 5vw, 72px) 0;
+}
+
+.admin-login,
+.review-card-panel,
+.admin-panel {
+  border: 1px solid rgba(244, 239, 228, 0.16);
+  border-radius: 8px;
+  background: rgba(15, 14, 13, 0.34);
+  box-shadow: var(--shadow);
+}
+
+.admin-login,
+.review-card-panel {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: clamp(24px, 5vw, 52px);
+  color: var(--cream);
+}
+
+.admin-login h1,
+.review-card-panel h1,
+.admin-topbar h1 {
+  color: var(--cream);
+  font-size: clamp(2.3rem, 5vw, 4.8rem);
+}
+
+.admin-login p,
+.review-card-panel p,
+.panel-heading p {
+  color: rgba(244, 239, 228, 0.72);
+}
+
+.admin-form,
+.appointment-form,
+.review-form {
+  display: grid;
+  gap: 16px;
+  margin-top: 28px;
+}
+
+.admin-form label,
+.appointment-form label,
+.review-form label {
+  display: grid;
+  gap: 8px;
+  color: rgba(244, 239, 228, 0.78);
+  font-size: 0.86rem;
+  font-weight: 800;
+}
+
+.admin-form input,
+.appointment-form input,
+.appointment-form select,
+.review-form textarea {
+  width: 100%;
+  min-height: 46px;
+  border: 1px solid rgba(244, 239, 228, 0.22);
+  padding: 11px 12px;
+  color: var(--cream);
+  background: rgba(15, 14, 13, 0.42);
+  font: inherit;
+}
+
+.appointment-form select option {
+  color: var(--ink);
+}
+
+.review-form textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+.admin-note {
+  min-height: 24px;
+  margin: 0;
+  color: var(--brass);
+  font-weight: 800;
+}
+
+.admin-dashboard {
+  display: grid;
+  gap: 22px;
+}
+
+.admin-topbar {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 18px;
+  color: var(--cream);
+}
+
+.admin-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.admin-panel {
+  padding: clamp(20px, 3vw, 30px);
+}
+
+.panel-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 20px;
+}
+
+.panel-heading h2 {
+  color: var(--cream);
+  font-size: clamp(1.45rem, 3vw, 2.25rem);
+}
+
+.appointment-form {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  align-items: end;
+}
+
+.appointment-list,
+.feedback-list {
+  display: grid;
+  gap: 12px;
+}
+
+.appointment-item,
+.feedback-item {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 18px;
+  padding: 18px;
+  border: 1px solid rgba(196, 155, 87, 0.24);
+  border-radius: 8px;
+  color: var(--cream);
+  background: rgba(244, 239, 228, 0.07);
+}
+
+.appointment-item h3,
+.feedback-item h3 {
+  font-size: 1.16rem;
+}
+
+.appointment-item p,
+.feedback-item p {
+  margin: 8px 0 0;
+  color: rgba(244, 239, 228, 0.72);
+}
+
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  padding: 6px 10px;
+  color: var(--coal);
+  background: var(--brass);
+  font-size: 0.78rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.complete-button {
+  align-self: center;
+}
+
+.star-field {
+  display: flex;
+  gap: 8px;
+}
+
+.star-field button {
+  border: 0;
+  color: rgba(244, 239, 228, 0.3);
+  background: transparent;
+  font-size: clamp(2.4rem, 7vw, 4.4rem);
+  line-height: 1;
+  cursor: pointer;
+}
+
+.star-field button.active {
+  color: var(--brass);
+}
+
+.review-result {
+  margin-top: 28px;
+  padding: 20px;
+  border: 1px solid rgba(196, 155, 87, 0.28);
+  color: var(--cream);
+  background: rgba(244, 239, 228, 0.08);
+}
+
+.review-result a {
+  margin-top: 14px;
+}
+
+@media (max-width: 860px) {
+  .admin-topbar,
+  .panel-heading,
+  .appointment-item,
+  .feedback-item {
+    grid-template-columns: 1fr;
+    display: grid;
+  }
+
+  .appointment-form {
+    grid-template-columns: 1fr;
+  }
+}
